@@ -59,7 +59,7 @@ A hot, new NY Tech Startup, Relaxr, has approached you to help them develop a ne
 ### Additional Learning/Practice Resources
 
 - [W3Schools](https://www.w3schools.com/w3css/)
-- [codeacademy css course](https://www.codecademy.com/learn/learn-css)
+- [codeacademy CSS course](https://www.codecademy.com/learn/learn-css)
 - [CSS-Tricks](https://css-tricks.com/)
 
 
