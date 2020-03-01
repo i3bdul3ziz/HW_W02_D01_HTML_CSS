@@ -9,12 +9,15 @@
      box-sizing: border-box; /* IE */
 }
 
-/******************************************
-/* FONTS
-/*******************************************/
-
-/* font-family: "Open Sans", Arial, sans-serif */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
 
 /******************************************
 /* BASE STYLES
@@ -25,7 +28,7 @@ body {
     color: #000;
     font-size: 12px;
     line-height: 1.4;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans',Helvetica, Arial, sans-serif;
 }
 
 
@@ -34,17 +37,146 @@ body {
 /*******************************************/
 
 header {
-
+    text-align: center;
+    color: white;
+    height: 500px;
+    padding: 30px;
+    background-image: url("/images/header_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 footer {
-
+    background-color: #121212;
+    height: 230px;
+    text-align: center;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
+#header h1 {
+    font-weight: 800;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 40px
+}
 
+#header h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
 
+#header a {
+    text-decoration: none;
+    background-color: #f9e42e;
+    color: #033048;
+    padding:10px 30px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 14px;
+}
 
+#content{
+    background-color: #f0efef;
+}
+
+#content #benifits{
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+#benifits h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: #033048;
+    padding: 5px 0;
+}
+#benifits p{
+    font-weight: 300;
+    font-size: 13px;
+    color: #606161;
+    margin: 10px 0 20px 0;
+}
+
+#benifits ul li{
+    font-weight: 300;
+    font-size: 13px;
+    color: #606161;
+    margin: 3px 40px;
+    list-style-type: disc;
+}
+
+#content #background{
+    background-image: url(/images/testimonial_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+#content #article{
+    width: 37%;
+    margin: auto;
+    padding: 6.5%;
+    text-align: center;
+    display: block;
+
+}
+
+#content #article h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+
+}
+#content #article p{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+}
+#content #article p span{
+
+    font-weight: 600;
+}
+
+#signUp{
+    background-color: #f9e42e;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+}
+
+#signUp a{
+    background-color: #033048;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+    color: white;
+}
+
+#footer h1{
+    font-weight: 800;
+    font-size: 34px;
+    color: #f9e42e;
+    padding: 30px;
+}
+
+#footer a{
+    padding: 0 20px;
+}
+
+#footer p{
+    margin-top: 40px;
+    color: white;
+}
